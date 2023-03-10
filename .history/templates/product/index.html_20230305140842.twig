@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos produits - La Boutique Française{% endblock %}
+
+{% block content %}
+    <h1>Nos produits</h1>
+
+    <div class="row">
+        {% for product in products %}
+            <div class="col-md-4">
+                <div class="product-item">
+                    <h4>{{ product.name }}</h4>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    
+{% endblock %}
